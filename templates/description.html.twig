@@ -1,0 +1,19 @@
+{#
+
+Description text for the Menu Example.
+
+#}
+
+
+{% set title_callbacks = path('lw_menu.title_callbacks') %}
+
+{% trans %}
+
+<p>This page has text with menu link(s).</p>
+
+<ul>
+
+    <li><a href={{ title_callbacks }}>LW Fancy Menu Title</a></li>
+</ul>
+
+{% endtrans %}

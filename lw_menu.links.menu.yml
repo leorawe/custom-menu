@@ -1,0 +1,27 @@
+# This file links a menu link with route_name.
+#
+# 'title' key is only key required.
+#
+# 'description' is  is shown either as a tooltip on the item or in the admin UI
+# as the description of the option on the page/
+#
+# 'weight' is used to order the items (higher weights get placed towards the
+# end of the menu among items on the same level).
+#
+# 'route_name' is used to link menu link to corresponding route.
+#
+# 'parent' is used to put item into the menu hierarchy by referring to the
+# parent menu link name.
+#
+lw_menu:
+  title: 'LW Menu Example'
+  description: 'Simplest possible menu type, and the parent menu entry for others'
+  expanded: 1
+  route_name: lw_menu
+
+lw_menu.title_callbacks:
+  title: 'LW Fancy Menu title'
+  description: 'The title of this menu item is dynamically generated'
+  parent: lw_menu
+  route_name: lw_menu.title_callbacks
+  weight: 1

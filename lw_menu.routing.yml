@@ -1,9 +1,17 @@
+lw_menu: # This is a route name.
+  path: '/lw/menu-example'
+  defaults:
+    _controller: '\Drupal\lw_menu\Controller\LWMenuController::description'
+    _title: 'LW Menu Example'
+  requirements:
+    _permission: 'access content'
+
 # Title of this menu entry will be altered by controller method defined by
 # key '_title_callback'.
-examples.menu_example.title_callbacks:
+lw_menu.title_callbacks:
   path: '/lw/menu-example/title-callbacks'
   defaults:
-    _title_callback: 'Drupal\lw_menu\Controller\MenuExampleController::titleCallback'
-    _controller: '\Drupal\lw_menu\Controller\MenuExampleController::titleCallbackContent'
+    _title_callback: 'Drupal\lw_menu\Controller\LWMenuController::titleCallback'
+    _controller: '\Drupal\lw_menu\Controller\LWMenuController::titleCallbackContent'
   requirements:
     _permission: 'access content'
