@@ -1,0 +1,7 @@
+name: Menu Example by LW
+type: module
+description: 'An example module for menu links in Drupal 8 modified by LW '
+package: 'LW Examples'
+core: 8.x
+dependencies:
+  - drupal:examples

@@ -1,0 +1,9 @@
+# Title of this menu entry will be altered by controller method defined by
+# key '_title_callback'.
+examples.menu_example.title_callbacks:
+  path: '/lw/menu-example/title-callbacks'
+  defaults:
+    _title_callback: 'Drupal\lw_menu\Controller\MenuExampleController::titleCallback'
+    _controller: '\Drupal\lw_menu\Controller\MenuExampleController::titleCallbackContent'
+  requirements:
+    _permission: 'access content'
